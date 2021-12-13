@@ -57,7 +57,7 @@
 
     <div *ngIf="this.isLoaded">
         <div class="card-container">
-            <a *ngFor="let post of posts" [routerLink]="['/post', post.id]" class="card">
+            <a *ngFor="let post of posts" [routerLink]="[post.slug]" class="card">
                 <span>{{ post.title }}</span>
             </a>
         </div>
